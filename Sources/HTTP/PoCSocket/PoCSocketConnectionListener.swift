@@ -193,7 +193,7 @@ public class PoCSocketConnectionListener: ParserConnecting {
         }
         let now = Date().timeIntervalSinceReferenceDate
         if let keepAliveUntil = parser?.keepAliveUntil, now >= keepAliveUntil {
-            print("Closing idle socket \(socketFD)")
+            // print("Closing idle socket \(socketFD)")
             close()
         }
     }
